@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Stream from "./Stream";
 import DownloadNow from "./DownloadNow";
 import GroupWatch from "./GroupWatch";
+import MarvelStudio from "./MarvelStudio";
 
 const Login = () => {
   return (
@@ -13,6 +14,7 @@ const Login = () => {
         <Stream />
         <DownloadNow />
         <GroupWatch />
+        <MarvelStudio />
       </Main>
     </div>
   );
