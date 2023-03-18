@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const DownloadNow = () => {
   return (
-    <div>
+    <>
       <Section>
         <Container>
           <TextInfo>
@@ -16,7 +16,7 @@ const DownloadNow = () => {
               available to all Movie Wars subscribers at a later date.
             </p>
             <button type="button" className="btn-theme-movie">
-              PREORDER
+              DOWNLOAD NOW
             </button>
           </TextInfo>
           <ImgInfo>
@@ -24,7 +24,7 @@ const DownloadNow = () => {
           </ImgInfo>
         </Container>
       </Section>
-    </div>
+    </>
   );
 };
 

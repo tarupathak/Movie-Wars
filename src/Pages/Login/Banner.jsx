@@ -6,7 +6,7 @@ function Banner() {
 
    
   return (
-    <div>
+    <>
       <Background>
         <Container>
           <Content>
@@ -25,12 +25,12 @@ function Banner() {
           </Content>
         </Container>
       </Background>
-    </div>
+    </>
   );
 }
 
 const Background = styled.section`
-  background-color: black;
+  background-image: url('');
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;

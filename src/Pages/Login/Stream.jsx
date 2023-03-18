@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Stream = () => {
   return (
-    <div>
+    <>
       <Section>
         <Container>
           <TextInfo>
@@ -24,7 +24,7 @@ const Stream = () => {
           </ImgInfo>
         </Container>
       </Section>
-    </div>
+    </>
   );
 };
 

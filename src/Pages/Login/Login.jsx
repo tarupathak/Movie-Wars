@@ -3,6 +3,7 @@ import Banner from "../Login/Banner";
 import styled from "styled-components";
 import Stream from "./Stream";
 import DownloadNow from "./DownloadNow";
+import GroupWatch from "./GroupWatch";
 
 const Login = () => {
   return (
@@ -11,6 +12,7 @@ const Login = () => {
         <Banner />
         <Stream />
         <DownloadNow />
+        <GroupWatch />
       </Main>
     </div>
   );
