@@ -66,7 +66,7 @@ const Footer = () => {
 };
 
 const Section = styled.section`
-  padding: 2rem 0;
+ padding: 2rem 0;
   margin-bottom: 0;
 
   @media screen and (max-width: 550px) {
