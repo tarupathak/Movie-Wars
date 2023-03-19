@@ -1,11 +1,11 @@
 import React from "react";
-import Banner from "./Banner";
 import styled from "styled-components";
-import Stream from "./Stream";
-import DownloadNow from "./DownloadNow";
-import GroupWatch from "./GroupWatch";
-import MarvelStudio from "./MarvelStudio";
-import Footer from "./Footer";
+import Banner from "../Components/Banner";
+import DownloadNow from "../Components/DownloadNow";
+import Stream from "../Components/Stream";
+import GroupWatch from "../Components/GroupWatch";
+import MarvelStudio from "../Components/MarvelStudio";
+import Footer from "../Components/Footer";
 
 const LandingPage = () => {
   return (
