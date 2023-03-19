@@ -5,7 +5,6 @@ import DownloadNow from "../Components/DownloadNow";
 import Stream from "../Components/Stream";
 import GroupWatch from "../Components/GroupWatch";
 import MarvelStudio from "../Components/MarvelStudio";
-import Footer from "../Components/Footer";
 
 const LandingPage = () => {
   return (
@@ -16,7 +15,6 @@ const LandingPage = () => {
         <DownloadNow />
         <GroupWatch />
         <MarvelStudio />
-        <Footer />
       </Main>
     </div>
   );
