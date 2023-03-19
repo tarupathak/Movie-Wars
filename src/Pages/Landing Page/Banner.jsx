@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import logo2 from "../Images/cta-logo-two.png";
+import bgImg from '../Images/movie-background-collage.jpg'
 
 function Banner() {
 
@@ -30,7 +31,7 @@ function Banner() {
 }
 
 const Background = styled.section`
-  background-image: url('');
+  background-image: url(${bgImg});
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
