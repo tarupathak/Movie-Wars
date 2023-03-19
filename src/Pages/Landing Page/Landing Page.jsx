@@ -1,12 +1,12 @@
 import React from "react";
-import Banner from "../Login/Banner";
+import Banner from "./Banner";
 import styled from "styled-components";
 import Stream from "./Stream";
 import DownloadNow from "./DownloadNow";
 import GroupWatch from "./GroupWatch";
 import MarvelStudio from "./MarvelStudio";
 
-const Login = () => {
+const LandingPage = () => {
   return (
     <div>
       <Main>
@@ -26,4 +26,4 @@ const Main = styled.main`
   overflow: auto;
 `;
 
-export default Login;
+export default LandingPage;
