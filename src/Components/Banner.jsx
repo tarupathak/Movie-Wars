@@ -32,7 +32,7 @@ function Banner() {
 
 const Background = styled.section`
   background-image: url(${bgImg});
-  height: 100vh;
+  height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
