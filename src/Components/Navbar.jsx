@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import admin from "../Images/admin.jpg";
 
 const Navbar = () => {
+  const [state, setState] = useState(false);
+  const ifPopupOpen = () => setState(!state);  
+
   return (
     <>
       <Nav>
@@ -43,9 +46,9 @@ const Navbar = () => {
           </li>
         </Links>
         <Auth>
-          <img src={admin} alt="admin" />
+          <img  onClick={ifPopupOpen} src={admin} alt="admin" />
         </Auth>
-        <Popup>
+        <Popup activeState={state}>
           <li>
             <NavLink to="" className="nav-link">
               <span>HOME</span>
@@ -77,8 +80,8 @@ const Name = styled.div`
 `;
 
 const Links = styled.div`
-  display: flex;
-  align-items: center;
+ display: flex;
+ align-items: center;
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: row wrap;
@@ -140,24 +143,26 @@ const Auth = styled.div`
 `;
 
 const Popup = styled.div`
-  postion: absolute;
-  top: 7vh;
-  rigth: 0rem;
-  padding: 0.5rem 1rem;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
   background-color: #040714;
   border-radius: 0.345rem;
   border: 1.3px solid rgba(151, 151, 151, 1);
   box-shadow: rgb(0 0 0 / 50%) 0px 0px 18px 0px;
+  padding: 0.5rem 1rem;
+  display: ${event => event.activeState ? "flex" : "none"};
+ 
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: absolute;
+  top: 7vh;
+  right: 3.5rem;
   li {
     width: 100%;
-    list-style: none;
     display: flex;
     align-items: flex-start;
-    border-bottom: 1.3px solid rgba(151, 151, 151, 1);
+    justify-content: flex-start;
+    border-bottom: 1.3px solid rgba(151,151,151,1);
+    list-style: none;
     > .nav-link {
       text-decoration: none;
       display: flex;
