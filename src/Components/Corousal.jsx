@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import slide1 from '../Images/slide1.jpg';
 import slide2 from '../Images/slide2.jpg';
 import slide3 from '../Images/slide3.jpg';
@@ -9,9 +12,18 @@ import slide6 from '../Images/slide6.jpg';
 import slide7 from '../Images/slide7.jpg';
 
 const Corousal = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true
+  };
+
   return (
     <div>
-      <CarsouselImg>
+      <CarsouselImg {...settings}>
         <Wrap>
           <div><img src={slide1} alt="img" /></div>
         </Wrap>
@@ -38,7 +50,7 @@ const Corousal = () => {
   )
 }
 
-const CarsouselImg = styled.div``;
+const CarsouselImg = styled(Slider)``;
 
 const Wrap = styled.div``;
 

@@ -1,13 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import Corousal from "../Components/Corousal";
+import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
  
 const Home = () => {
   return (
     <div>
+     <Navbar />
       <Container>
+      
         <Corousal />
+        
       </Container>
+      <Footer />
     </div>
   );
 };
