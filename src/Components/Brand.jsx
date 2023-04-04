@@ -67,6 +67,18 @@ const Container = styled.section`
   grid-gap: 25px;
   gap: 25px;
   grid-template-columns: repeat(6, minmax(0, 1fr));
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 15px;
+    gap: 15px;
+  }
+
+  @media screen and (min-width: 767px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 11px;
+    gap: 11px;
+  }
 `;
 
 const Wrap = styled.div`

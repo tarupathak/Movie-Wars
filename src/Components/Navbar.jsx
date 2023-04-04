@@ -79,6 +79,10 @@ const Name = styled.div`
 `;
 
 const Links = styled.div`
+
+@media screen and (min-width: 280px) and (max-width: 991px) {
+  display: none;
+}
  display: flex;
  align-items: center;
   justify-content: flex-start;

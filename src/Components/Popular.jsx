@@ -6,7 +6,7 @@ import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const OurMovies = () => {
+const Popular = () => {
     var settings = {
         dots: false,
         infinite: true,
@@ -24,7 +24,7 @@ const OurMovies = () => {
   return (
     <>
       <Section>
-      <h1>Our Movies</h1>
+      <h1>Popular Movies</h1>
         <CarsouselImg {...settings}>
           <Wrap>
             <div>
@@ -191,4 +191,4 @@ div{
 }
 `;
 
-export default OurMovies;
+export default Popular;
