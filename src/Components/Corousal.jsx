@@ -67,22 +67,18 @@ ul li.slick-active button{
   z-index: 1500;
   width: 5vw;
   height: 100%;
-
   &:hover{
     opacity: 1;
     z-index: 2000;
     transition: opacity 0.2s ease 0s;
   }
 }
-
 .slick-prev{
   left: -75px;
 }
-
 .slick-next{
   rigth: -75px;
 }
-
 .slick-list{
   overflow: initial !important;
 }

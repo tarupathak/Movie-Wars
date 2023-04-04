@@ -1,24 +1,26 @@
 import React from "react";
 import styled from "styled-components";
+import Brand from "../Components/Brand";
 import Corousal from "../Components/Corousal";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <Container>
         <Corousal />
+        <Brand />
       </Container>
       <Footer />
-    </div>
+    </>
   );
 };
 
 const Container = styled.main`
   position: relative;
-  height: calc(110vh - 250px);
+  height: fit-content;
   padding: 0 calc(3.5vw + 5px);
   display: block;
   overflow: hidden;
